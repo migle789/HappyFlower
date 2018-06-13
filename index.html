@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+      <meta charset="UTF-8">
+      <style>
+            body {
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 20px;
+            }
+            
+            #myBtn {
+              display: none;
+              position: fixed;
+              bottom: 20px;
+              right: 30px;
+              z-index: 99;
+              font-size: 18px;
+              border: none;
+              outline: none;
+              background-color: #bd3e85;
+              color: white;
+              cursor: pointer;
+              padding: 15px;
+              border-radius: 4px;
+            }
+            
+            #myBtn:hover {
+              background-color: #555;
+            }
+            </style>
+    <head>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i" rel="stylesheet" type="text/css"> 
+        
+        <title>Happyflower</title>
+        
+    </head>
+    <body>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">To Top</button>
+            
+            <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+            </script>
+            
+        <header>
+            <nav>
+                <div class="row">
+                    <i class="ion-ios-rose log"></i>
+                    <ul class="main-nav">
+                     <li><a href="#first">Flowers delivery</a></li>
+                     <li><a href="#how">How it works</a></li>
+                     <li><a href="#cities">Our cities</a></li>
+                     <li><a href="#contact">Contact us</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+       <div class="hero-text-box">
+           <h1>Make someone happier today.</h1>
+           <a class="btn btn-full" href="#how">I want to know how</a>
+           <a class="btn btn-ghost" href="#flowers">I just want flowers</a>
+        </div>
+        </header>
+        <section id="first" class="section-features">
+            <div class="row">
+                <h2>HappyFlower - makes everyone happy.</h2>
+                <p class="long-copy">Hello, we’re HappyFlower - best wild flowers delivery service. We know that it is important for you to make someone you care about happy, to make them feel noticed, impressed and to simply say that you care. So let us take care of that by delivering them most amazing wild flower arrangements made by our professional designers. 
+                </p>
+            </div>
+            <div class="row">
+            <div class="col span-1-of-4">
+                   <i class="ion-ios-infinite-outline icon-big"></i>
+            <h3>Up to 365 days/year</h3>
+            <p>We are working 365 days/year and 24/7. Call as any time you need us. </p>
+            </div>
+            <div class="col span-1-of-4">
+                <i class="ion-clock icon-big"></i>
+            <h3>Ready in 20 minutes</h3>
+            <p>We will make unique new flower arrangement  designed only for your loved one, friend or someone you want to make happy just in 20 minutes.</p>
+            </div>
+            <div class="col span-1-of-4">
+                <i class="ion-ios-flower-outline icon-big"></i>
+            <h3>100% fresh flowers</h3>
+            <p>All our flowers are picked fresh in every morning by our workers, so you do not need to be worry about getting them in a bad shape.</p>
+            </div>
+            <div class="col span-1-of-4">
+                <i class="ion-ios-lightbulb icon-big"></i>
+            <h3>Be creative with us</h3>
+            <p>Do not be afraid to advice us, or be creative with us.</p>
+            </div>
+            </div>
+        </section>
+        
+        <section class="section-meals">
+            <ul class="meals-showcase clearfix">
+            <li>
+                <figure class="meal-photo">
+                <img src="resources/css/img/geles8.jpg" alt="Flowers">
+                </figure>
+                </li>
+                <li>
+                <figure class="meal-photo">
+                <img src="resources/css/img/geles2.jpg" alt="Flowers">
+                </figure>
+                </li>
+                <li>
+                <figure class="meal-photo">
+                <img src="resources/css/img/geles3.jpg" alt="Flowers">
+                </figure>
+                </li>
+                <li>
+                <figure class="meal-photo">
+                <img src="resources/css/img/geles8.jpg" alt="Flowers">
+                </figure>
+                </li>
+            </ul>
+            
+            <ul class="meals-showcase clearfix">
+            <li>
+                <figure class="meal-photo">
+                <img src="resources/css/img/geles5.jpg" alt="Flowers">
+                </figure>
+                </li>
+                <li>
+                <figure class="meal-photo">
+                <img src="resources/css/img/geles8.jpg" alt="Flowers">
+                </figure>
+                </li>
+                <li>
+                <figure class="meal-photo">
+                <img src="resources/css/img/geles7.jpg" alt="Flowers">
+                </figure>
+                </li>
+                <li>
+                <figure class="meal-photo">
+                <img src="resources/css/img/geles8.jpg" alt="Flowers">
+                </figure>
+                </li>
+            </ul>
+        
+        </section>
+        
+        <section id="how" class="section-steps">
+            <div class="row">
+            <h2>How it works &mdash; Simple as 1, 2, 3</h2>
+            </div>
+            <div class="row">
+            <div class="col span-1-of-2 steps-box">
+                <img src="resources/css/img/iphone.jpg" alt="HappyFlower on iPhone" class="app-screen">
+                </div>
+                <div class="col span-1-of-2 steps-box">
+                <div class="works-step">
+                    <div>1
+                    </div>
+                    <p>Take your iPhone and search for HappyFlower.com
+                    </p>
+                    </div>
+                     <div class="works-step">
+                    <div>2
+                    </div>
+                    <p>Download our app and order your flowers.
+                    </p>
+                    </div>
+                     <div class="works-step">
+                    <div>3
+                    </div>
+                    <p>Get a call from your friend or loved one how happy they are with our delivered flowers. 
+                    </p>
+                    </div>
+                    
+                    <a href="#" class="btn-app">
+                    <img src="resources/css/img/download-app.svg" alt="app store button">
+                    </a>
+                    <a href="#" class="btn-app">
+                    <img src="resources/css/img/download-app-android.png" alt="play store button">
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="cities" class="section-cities">
+        <div class="row">
+            <h2>We're currently in these cities:</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4 box">
+                <img src="resources/css/img/lisbon-3.jpg" alt="Lisbon">
+                    <h3>Lisbon</h3>
+                    <div class="city-feature">
+                    <i class="ion-android-person icon-small"></i>
+                    1600+ happy people
+                    </div>
+                     <div class="city-feature">
+                    <i class="ion-fork icon-small"></i>
+                   60+ top designers
+                    </div>
+                     <div class="city-feature">
+                    <i class="ion-social-twitter icon-small"></i>
+                         <a href="#">@happyflower_lx</a>
+                    </div>
+                </div>
+            <div class="col span-1-of-4 box">
+                <img src="resources/css/img/san-francisco.jpg" alt="San Francisco">
+                    <h3>San Francisco</h3>
+                    <div class="city-feature">
+                    <i class="ion-android-person icon-small"></i>
+                    3700+ happy people
+                    </div>
+                     <div class="city-feature">
+                    <i class="ion-fork icon-small"></i>
+                   160+ top designers
+                    </div>
+                     <div class="city-feature">
+                    <i class="ion-social-twitter icon-small"></i>
+                         <a href="#">@happyflower_sf</a>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                <img src="resources/css/img/berlin.jpg" alt="Berlin">
+                    <h3>Berlin</h3>
+                    <div class="city-feature">
+                    <i class="ion-android-person icon-small"></i>
+                 2300+ happy people
+                    </div>
+                     <div class="city-feature">
+                    <i class="ion-fork icon-small"></i>
+                   110+ top designers
+                    </div>
+                     <div class="city-feature">
+                    <i class="ion-social-twitter icon-small"></i>
+                         <a href="#">@happyflower_berlin</a>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                <img src="resources/css/img/london.jpg" alt="London">
+                    <h3>London</h3>
+                    <div class="city-feature">
+                    <i class="ion-android-person icon-small"></i>
+                    1200+ happy people
+                    </div>
+                     <div class="city-feature">
+                    <i class="ion-fork icon-small"></i>
+                   50+ top designers
+                    </div>
+                     <div class="city-feature">
+                    <i class="ion-social-twitter icon-small"></i>
+                         <a href="#">@happyflower_london</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-testimonials">
+        <div class="row">
+            <h2>What customers think about us</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                <blockquote>
+                    Happyflower is just awesome! It is super fast and quality flower delivery.
+                    <cite><img src="resources/css/img/customer-1.jpg">Alberto Duncan</cite>
+                    </blockquote>
+                </div>
+                  <div class="col span-1-of-3">
+                <blockquote>
+                    Inexpensive, unique arrangements. Me and my family are so in love!
+                    <cite><img src="resources/css/img/customer-2.jpg">Joana Silva</cite>
+                    </blockquote>
+                </div>
+                  <div class="col span-1-of-3">
+                <blockquote>
+                   I was looking for fast flower delivery service because I forgot my girlfriends birthday. Happyflower delivered flowers to her after 20min and she was very happy with me. Thanks!
+                    <cite><img src="resources/css/img/customer-3.jpg">Milton Chapman</cite>
+                    </blockquote>
+                </div>
+            
+            </div>
+        </section>
+        
+        <section id="flowers" class="section-plans">
+        <div class="row">
+            <h2>Prices</h2>
+            </div>
+            <div class="row">
+            <div class="col span-1-of-3">
+                <div class="plan-box">
+                <div>
+                    <h3>Small</h3>
+                    <p class="plan-price">$50</p>
+                    <p class="plan-price-meal">Small beautiful arrangement with two type of flowers</p>
+                    </div>
+
+                    <div>
+                        <a href="#" class="btn btn-full">Order</a>
+                    </div>
+                    </div>
+
+                </div>
+               
+                    
+                        <div class="col span-1-of-3">
+                <div class="plan-box">
+                <div>
+                    <h3>Medium</h3>
+                    <p class="plan-price">$100</p>
+                    <p class="plan-price-meal">Medium arrangement with 4 types of flowers + greeting card</p>
+                    </div>
+                 
+               
+                    <div>
+                        <a href="#" class="btn btn-ghost">Order</a>
+                    </div>
+                    </div>
+
+                            
+                </div>
+                    
+                        <div class="col span-1-of-3">
+                <div class="plan-box">
+                <div>
+                    <h3>Big</h3>
+                    <p class="plan-price">$300</p>
+                    <p class="plan-price-meal">Big flower arrangement with 5-10 type of flowers  + baloons and greeting card</p>
+                    </div>
+                   
+                     
+                    <div>
+                        <a href="#" class="btn btn-ghost">Order</a>
+                    </div>
+                    </div>
+                        
+                    
+               
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="section-form">
+        <div class="row">
+            <h2>We're happy to hear from you</h2>
+            </div>
+            <div class="row">
+            <form method="post" action="#"class="contact-form">
+                
+                <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="name">Name</label>
+                    </div>
+                <div class="col span-2-of-3">
+                    <input type="text" name="name" id="name" placeholder="Your name" required>
+                    </div>
+                    
+                      <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="email">Email</label>
+                    </div>
+                <div class="col span-2-of-3">
+                    <input type="email" name="email" id="email" placeholder="Your email" required>
+                    </div>
+                    </div>
+                    
+                        <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="find-us">How did you find us</label>
+                    </div>
+                <div class="col span-2-of-3">
+                   <select name="find-us" id="find-us">
+                    <option value="friends" selected>Friends</option>
+                       <option value="search">Search engine</option>
+                       <option value="ad">Add</option>
+                       <option value="other">Other</option>
+                    </select>
+                    </div>
+                </div>
+                  
+                     <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="news">Newsletter</label>
+                    </div>
+                <div class="col span-2-of-3">
+                    <input type="checkbox" name="news" id="news" checked> Yes, please
+                    </div>
+                    </div>
+                    
+                     <div class="row">
+                <div class="col span-1-of-3">
+                    <label>Drop us a line</label>
+                    </div>
+                <div class="col span-2-of-3">
+                   <textarea name="message" placeholder="Your message"></textarea>
+                    </div>
+                    </div>
+                    
+                     <div class="row">
+                <div class="col span-1-of-3">
+                    <label>&nbsp;</label>
+                    </div>
+                <div class="col span-2-of-3">
+                    <input type="submit" value="Send it!">
+                    </div>
+                    </div>
+            </div>
+            </form>
+            </div>
+        </section>
+    <footer>
+        <div class="row">
+        <div class="col span-1-of-2">
+            <ul class="footer-nav">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">IOS App</a></li>
+            <li><a href="#">Android App</a></li>
+            </ul>
+        </div>
+        <div class="col span-1-of-2">
+        <ul class="social-links">
+        <li><a href="#"><i class="ion-social-facebook-outline"></i></a></li>
+        <li><a href="#"><i class="ion-social-googleplus-outline"></i></a></li>  
+        <li><a href="#"><i class="ion-social-twitter-outline"></i></a></li>  
+        <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>  
+        </ul>
+        </div>
+        </div>
+        <div class="row">
+        <p>
+        Copyright &copy; 2015 by Happyflower. All rights reserved.    
+        </p>
+        </div>
+    </footer>
+    </body>
+</html>
+
+
